@@ -1,5 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>io.webinv</groupId>
   <artifactId>webinv-avprobe</artifactId>
@@ -29,9 +28,9 @@
 
   <scm>
     <connection>scm:git@github.com:webinv/java-library-avprobe.git</connection>
-    <developerConnection>scm:git@github.com:webinv/java-library-avprobe.git</developerConnection>
+    <developerConnection>scm:git:git://github.com/webinv/java-library-avprobe.git</developerConnection>
     <url>https://github.com/webinv/java-library-avprobe</url>
-    <tag>HEAD</tag>
+    <tag>webinv-avprobe-1.0</tag>
   </scm>
 
   <organization>
