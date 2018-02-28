@@ -7,7 +7,7 @@
   <version>1.0</version>
 
   <name>webinv-avprobe</name>
-  <description>Avprobe wrapper</description>
+  <description>Libav avprobe wrapper, reading video metadata</description>
   <url>https://github.com/webinv/java-library-avprobe</url>
 
   <licenses>
@@ -19,8 +19,9 @@
 
   <developers>
     <developer>
-      <name>Krzysztof Kardaszr</name>
+      <name>Krzysztof Kardasz</name>
       <email>krzysztof@kardasz.eu</email>
+      <url>https://www.kardasz.eu</url>
       <organization>WebInventions</organization>
       <organizationUrl>https://www.webinventions.pl</organizationUrl>
     </developer>
@@ -146,7 +147,4 @@
       <version>${jackson.version}</version>
     </dependency>
   </dependencies>
-
-
-
 </project>

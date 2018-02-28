@@ -1,3 +1,19 @@
+/*
+ * Copyright 2002-2018 the original author or authors.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
 package io.webinv.avprobe;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -10,25 +26,47 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.nio.charset.Charset;
 
+/**
+ * Avprobe reader
+ *
+ * @author Krzysztof Kardasz <krzysztof@kardasz.eu>
+ */
 public class Avprobe
 {
+    /**
+     * Logger
+     */
     private final Logger logger = LogManager.getLogger(this.getClass());
 
-    private String avProbeBinPath = "avprobe";
+    /**
+     * avprobe binary path
+     */
+    private String avprobePath = "avprobe";
 
-    public String getAvProbeBinPath()
+    /**
+     * Return avprobe binary path
+     */
+    public String getAvprobePath()
     {
-        return avProbeBinPath;
+        return avprobePath;
     }
 
-    public void setAvProbeBinPath(String avProbeBinPath)
+    /**
+     * @param avprobePath avprobe binary path
+     */
+    public void setAvprobePath(String avprobePath)
     {
-        this.avProbeBinPath = avProbeBinPath;
+        this.avprobePath = avprobePath;
     }
 
+    /**
+     * Reads metadata from video
+     *
+     * @param filepath video file path
+     */
     public AvprobeResult getInfo (String filepath) throws IOException, InterruptedException
     {
-        ProcessBuilder pb = new ProcessBuilder(getAvProbeBinPath(),
+        ProcessBuilder pb = new ProcessBuilder(getAvprobePath(),
                 "-v", "quiet",
                 "-show_format",
                 "-show_streams",
