@@ -22,7 +22,7 @@ import java.util.List;
 /**
  * Avprobe results
  *
- * @author Krzysztof Kardasz <krzysztof@kardasz.eu>
+ * @author Krzysztof Kardasz
  */
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class AvprobeResult {

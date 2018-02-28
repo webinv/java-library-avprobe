@@ -24,7 +24,7 @@ import java.util.Map;
 /**
  * Avprobe stream info
  *
- * @author Krzysztof Kardasz <krzysztof@kardasz.eu>
+ * @author Krzysztof Kardasz
  */
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class AvprobeStream {

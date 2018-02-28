@@ -29,7 +29,7 @@ import java.nio.charset.Charset;
 /**
  * Avprobe reader
  *
- * @author Krzysztof Kardasz <krzysztof@kardasz.eu>
+ * @author Krzysztof Kardasz
  */
 public class Avprobe
 {
