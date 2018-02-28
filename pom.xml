@@ -1,0 +1,86 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>io.webinv</groupId>
+  <artifactId>webinv-avprobe</artifactId>
+  <packaging>jar</packaging>
+  <version>1.0</version>
+  
+  <name>webinv-avprobe</name>
+  <description>Avprobe wrapper</description>
+  <url>https://github.com/webinv/java-library-avprobe</url>
+
+  <licenses>
+    <license>
+      <name>The Apache License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+    </license>
+  </licenses>
+
+  <developers>
+    <developer>
+      <name>Krzysztof Kardaszr</name>
+      <email>krzysztof@kardasz.eu</email>
+      <organization>WebInventions</organization>
+      <organizationUrl>https://www.webinventions.pl</organizationUrl>
+    </developer>
+  </developers>
+
+  <scm>
+    <connection>scm:git@github.com:webinv/java-library-avprobe.git</connection>
+    <developerConnection>scm:git@github.com:webinv/java-library-avprobe.git</developerConnection>
+    <url>https://github.com/webinv/java-library-avprobe</url>
+    <tag>HEAD</tag>
+  </scm>
+
+  <organization>
+    <name>WebInventions</name>
+    <url>http://www.webinventions.pl</url>
+  </organization>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+  <properties>
+    <java.version>1.8</java.version>
+    <jackson.version>2.9.4</jackson.version>
+    <log4j.version>2.10.0</log4j.version>
+    <commons.io.version>2.6</commons.io.version>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-core</artifactId>
+      <version>${log4j.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>commons-io</groupId>
+      <artifactId>commons-io</artifactId>
+      <version>${commons.io.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-databind</artifactId>
+      <version>${jackson.version}</version>
+    </dependency>
+  </dependencies>
+</project>
