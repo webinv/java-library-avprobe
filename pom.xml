@@ -3,7 +3,7 @@
   <groupId>io.webinv</groupId>
   <artifactId>webinv-avprobe</artifactId>
   <packaging>jar</packaging>
-  <version>1.0</version>
+  <version>1.0-SNAPSHOT</version>
 
   <name>webinv-avprobe</name>
   <description>Libav avprobe wrapper, reading video metadata</description>
@@ -27,10 +27,9 @@
   </developers>
 
   <scm>
-    <connection>scm:git@github.com:webinv/java-library-avprobe.git</connection>
-    <developerConnection>scm:git:git://github.com/webinv/java-library-avprobe.git</developerConnection>
     <url>https://github.com/webinv/java-library-avprobe</url>
-    <tag>webinv-avprobe-1.0</tag>
+    <connection>scm:git:git://github.com/webinv/java-library-avprobe.git</connection>
+    <developerConnection>scm:git:git@github.com:webinv/java-library-avprobe.git</developerConnection>
   </scm>
 
   <organization>
